@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.upper{
+    width: 100vw;
+    background-color: #e84218ad;
+    height: 100vh;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+.container{
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 100%;
+    background-color: honeydew;
+    height:100%;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.swiper-slide img{
+    width:100%;
+    height: 100%;
+
+}
+
+.swiper-button-prev , .swiper-button-next{
+    border: 2px solid aliceblue;
+    border-radius: 4px;
+
+}
+
+

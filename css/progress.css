@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    display: grid;
+    place-items: center;
+}
+.skill{
+    width: 170px;
+    height: 170px;
+
+    position: relative;
+}
+.skill .outer{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    
+}
+.inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+    
+}
+.circle{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation:animate 2s linear forwards;
+}
+@keyframes animate {
+    100%{
+    stroke-dashoffset:114;
+    }
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+

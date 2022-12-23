@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painter App using Canva</title>
+    <link rel="stylesheet" href="css/practicecanvas.css">
+    <link rel="stylesheet" href="css/new/all.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- <span class="shapes">Shapes</span><br> -->
+        <!-- <section class="tools">
+   <button><i class="fas fa-square" > </i><span>Square</span></button>     <br><hr>
+   <button><i class="fas fa-circle" > </i><span>Circle</span></button>     <br><hr>
+     <button><i class="fas fa-recycle" > </i><span>Triangle</span></button>   <br><hr>
+    </section> -->
+        <ul class="tools">
+            <li class="fixed shapes"><span> Shapes</span></li>
+            <hr>
+            <li class="option active " id="rectangle"><i class="fas fa-square "> </i><span>Rectangle</span></li>
+            <hr>
+            <li class="option " id="circle"><i class="fas fa-circle "> </i><span>Circle</span></li>
+            <hr>
+            <li class="option " id="triangle"><i class="fas fa-recycle "> </i><span>Triangle</span></li>
+            <hr>
+            <li class="option "><input type="checkbox" name="" id="facheckbox"><span>Fill Color</span></li>
+            <hr>
+            <li class="fixed shapes"><span>Options</span></li>
+            <hr>
+
+            <li class="option " id="brush"><i class="fas fa-pen"> </i><span>Pen</span></li>
+            <hr>
+            <li class="option " id="eraser"><i class="fas fa-eraser"> </i><span>eraser</span></li>
+            <hr>
+            <li class="option "><input type="range" min="1" max="30" value="5" name="" id="inprange"></li>
+            <hr>
+
+            <li class="fixed shapes"><span>Colors</span></li>
+            <hr>
+            <ul class="options">
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"><input type="color" class="option" name="" value="#123456" id="inpcolor"></li>
+
+            </ul>
+            <li class="option"><button class="btn" id="clearcanvas">Clear Canvas</button></li>
+            <li class="option"><button id="saveimage">Save as image</button></li>
+        </ul>
+
+        <canvas></canvas>
+    </div>
+
+    <script src="js/canvas.js"></script>
+    <!-- 
+<script>
+const canvas=document.querySelector("canvas"),
+ctx=canvas.getContext("2d")
+
+// Global variables
+let startDrawing=false;
+
+window.addEventListener("load",()=>{
+  canvas.width=canvas.offsetWidth
+  canvas.height=canvas.offsetHeight
+
+})
+const writing=(e)=>{
+    if(!startDrawing)return
+    ctx.lineTo(e.offsetX,e.offsetY)
+    ctx.stroke();
+    
+    console.log(e)
+// ctx.lineTo(e)
+    
+}
+
+const beginDrawing=()=>{
+    startDrawing=true
+    ctx.beginPath()
+}
+const stopWriting=()=>{
+startDrawing=false
+}
+window.addEventListener("mousedown",beginDrawing)
+window.addEventListener("mousemove",writing)
+window.addEventListener("mouseup",stopWriting)
+
+
+
+
+
+
+</script>
+
+     -->
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: honeydew;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    border: 4px solid darkmagenta;
+}
+.clockdiv{
+    width: 100vw;
+    height: 50vh;
+    background-color: honeydew;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    width: 300px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(210, 255, 210); */
+    background-color: darkorange;
+}
+.clock span{
+    font-size: 3rem;
+    padding: 0 14px;
+}
+h2{
+    margin: 15vh 0 3vh 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: darkgreen;
+    text-transform: uppercase;
+    background-color: darkorange;
+}
+.fa-rocket{
+    font-size: 4rem;
+    color: darkorange;
+    
+}
+.rokki2{
+    animation: rocket 2s linear infinite;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 0 ;
+    right: 10vw;
+}
+.rokki{
+    animation: rokki 2s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    transform: rotate(133deg);
+
+
+}
+@keyframes rocket {
+    0%{
+       bottom: 0;
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        bottom: 110%;
+    }
+}
+@keyframes rokki {
+    0%{
+       top: 0;
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        top: 100%;
+    }
+}

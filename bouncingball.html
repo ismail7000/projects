@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball effects</title>
+    <link rel="stylesheet" href="css/buncingball.css">
+</head>
+<body  >
+    <div class="plate" id="ball">
+        <div class="ball " id="ball-a" ></div>
+        <div class="ball "  id="ball-b"></div>
+        <div class="ball "  id="ball-c"></div>
+        <div class="ball "  id="ball-d"></div>
+        <div class="ball "  id="ball-e"></div>
+    </div>
+
+<script>
+var ball =document.getElementById('ball')
+var ballA =document.getElementById('ball-a')
+var ballB =document.getElementById('ball-b')
+var ballC =document.getElementById('ball-c')
+var ballD =document.getElementById('ball-d')
+var ballE =document.getElementById('ball-e')
+
+function bouncing(){
+var element1=Math.floor(Math.random()*9)
+var element2=Math.floor(Math.random()*9)
+var element3=Math.floor(Math.random()*9)
+var element4=Math.floor(Math.random()*9)
+var element5=Math.floor(Math.random()*9)
+ballA.textContent=element1
+// ballA.style.backgroundColor='green'
+ballB.textContent=element2
+ballC.textContent=element5
+// ballC.style.backgroundColor='green'
+
+ballD.textContent=element3
+ballE.textContent=element4
+// ballE.style.backgroundColor='green'
+
+}
+setInterval(bouncing,1000)
+
+</script>
+
+
+</body>
+</html>

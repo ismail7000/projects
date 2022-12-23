@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    font-family: sans-serif;
+    background-color: honeydew;
+    overflow-x: hidden;
+}
+:root{
+    ----color: darkgoldenrod;
+    ---color: rgb(19, 48, 16);
+    --color:rgb(211, 1, 1);
+}
+/* title */
+.title{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+}
+.underline{
+    width: 70px;
+    background-color: var(----color);
+    padding: 2px 0;
+
+}
+h2{
+    font-size: 2.3rem;
+    color: var(---color);
+    font-weight: 700;
+    padding: 17px 40px;
+    letter-spacing: 2px;
+}
+/* buttons */
+.btn-container{
+    /* display: flex; */
+    width: 100%;
+    text-align: center;
+}
+button{
+    padding: 6px 9px;
+    color: darkgoldenrod;
+    border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    background: none;
+}
+button:hover{
+    color: aliceblue;
+    background-color: darkgoldenrod;
+}
+/* main section css */
+.main-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,1fr));
+
+    padding: 10px 2vw 5px 2vw;
+    /* align-items: center;
+    justify-content: center; */
+}
+.menu-items{
+    /* width: 80%; */
+    margin: 20px 0;
+    display: flex;
+
+}
+.items-info{
+    width: 70%;
+    padding: 10px 13px;
+
+}
+.menu-items .photo{
+    width: 20%;
+    /* height: 30vh; */
+    background-size: 100% 100%;
+    background-position: left;
+    border: 3px solid var(----color);
+    border-radius: 7px;
+
+
+}
+.menu-items header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 8px;
+    border-bottom: 2px solid var(---color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.menu-items .price{
+    color: var(----color);
+}
+.menu-items .items-text{
+    padding: 10px 8px;
+    color: var(---color);
+    font-size: 1rem;
+    
+    text-align: left;
+}
+/* responsive section */
+@media only screen and (max-width:900px) {
+    .menu-items{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .menu-items{
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu-items .photo{
+        width: 80%;
+    }
+    .items-info{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:500px) {
+    
+    .menu-items .photo{
+        width: 90%;
+    }
+    .items-info{
+        width: 90%;
+    }
+}

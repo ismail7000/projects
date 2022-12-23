@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="upper">
+        <div class="frontsection">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-burn" > finder</i>
+                </div>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Content</a></li>
+                </ul>
+            </nav>
+            <div class="maintext">
+                <h1>Best  Software house <br> for  Enternship.</h1>
+                <p>Connect with people you know but have't met yet</p>
+                <button class="btn" >Explore now</button>
+                <div class="downloadbtn">
+                    <button class="btn2" >Download the app <i class="fas fa-caret-down" ></i> </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+
+
+        
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/6.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+       -->
+        <!-- If we need scrollbar
+         <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+  
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+// let moveback=document.querySelector(".moveback")
+// let movenext=document.querySelector(".movenext")
+// let imgArr=[
+// "img/3.jpg",
+// "img/4.jpg",
+// "img/5.jpg",
+// "img/6.jpg",
+// ]
+// let counter=0
+// movenext.addEventListener("click",()=>{
+//     if(counter<imgArr.length-1){
+//         counter++
+//     }
+//     else{
+//         counter=0
+//     }
+// img.src=imgArr[counter]
+// })
+// moveback.addEventListener("click",()=>{
+//     if(counter<imgArr.length-1){
+//         counter++
+//     }
+//     else{
+//         counter=0
+//     }
+// img.src=imgArr[counter]
+// })
+// const moveimg=()=>{
+//     img.src=imgArr[counter]
+//     console.log(imgArr.length)
+//     if(counter<imgArr.length-1){
+//         counter++
+//     }
+//     else{
+//         counter=0
+
+//     }
+// }
+// setInterval(moveimg,3000)
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+//   direction: 'vertical',
+autoplay:{
+    delay:2000,
+    disableOnInteraction:false,
+},
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+});
+
+
+</script>
+</body>
+</html>

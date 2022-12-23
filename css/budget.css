@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background-color: honeydew;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+:root{
+    ----color: green;
+    ---color: rgb(3, 99, 150);
+    --color:rgb(211, 1, 1);
+}
+h3{
+    font-size: 1.8rem;
+    color: var(----color);
+    font-weight: 500;
+    padding: 17px 40px;
+}
+main{
+    width: 100vw;
+    display: flex;
+    padding-top: 14px;
+}
+/* inside two div css */
+/* inputsection css */
+.inputsection{
+    width: 45%;
+}
+
+.inputsection .budgetdiv,.figures{
+    width: 330px;
+    padding: 4px 12px;
+    margin: 16px 0 19px 5vw;
+    border: 2px solid var(----color);
+    border-radius: 5px;
+}
+.figures{
+    color: maroon;
+    background-color: rgb(249, 208, 208);
+    border: none;
+    margin: 20px 0 19px 5vw;
+    padding: 12px 20px;
+    display: none;
+
+}
+.inputsection input{
+    outline: none;
+    padding: 4px 16px;
+    font-size: 1.2rem;
+    border: 1px solid var(----color);
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block;
+}
+.inputsection button{
+    display: block;
+    color: var(----color);
+    padding: 3px 4px;
+    font-size: 1.1rem;
+    background: none;
+    border: 2px solid var(----color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px var(----color);
+    margin: 7px 0;
+}
+.inputsection .expensivediv{
+    width: 330px;
+    padding: 4px 12px;
+    margin: 16px 0 19px 5vw;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+}
+.expensivediv button{
+    color: var(--color);
+    border: 2px solid var(--color);
+    box-shadow: 1px 1px 7px var(--color);
+
+}
+
+/* input secion css completed */
+/* outputsecion css  */
+.seconddiv{
+    width: 55%;
+    
+}
+.outputsection{
+    width: 55%;
+    
+}
+.outputdiv{
+    width: 55%;
+    display: flex;
+    text-align: center;
+    /* grid-gap: 10px; */
+}
+.outputdiv div{
+    margin: 0 30px;
+}
+.outputdiv i{
+    display: block;
+    color: var(---color);
+    font-size: 3.4rem;
+    padding: 20px 0;
+}
+.outputdiv span{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    
+    
+}
+.outputdiv .money{
+    font-size: 2.5rem;
+    color: var(----color);
+}
+.expenses .saveexpence{
+    color: var(--color);
+}
+/* printed from section css */
+.printedform{
+    width: 55%;
+    padding: 6vh 0 1vh 0vw;
+
+}
+.printedform span{
+    margin: 0 30px ;
+}

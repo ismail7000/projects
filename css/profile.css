@@ -1,0 +1,67 @@
+*{
+    margin: 0%;padding: 0%;box-sizing: border-box;font-family: sans-serif;
+}
+body{
+    width: 100vw;height: 100vh;background-color: honeydew;
+    display: grid;place-items: center;text-align: center;
+    
+}
+.profile{
+    width: 28%;height: 80vh;margin-top: 5vh;border-radius: 15px;
+    position: relative;box-shadow: 4px 4px 14px crimson;
+}
+.set{
+    width: 100%;height: 10vh;background-color: rgb(196, 19, 54);border-radius: 15px;
+    display: flex;align-items: center;justify-content: space-between;
+}
+.set i{
+    margin: 0 20px;font-size: 1.5rem;color: white;
+}
+.main{
+    width: 100%;height: 63vh;background-color: rgb(196, 19, 54);border-radius: 15px;
+    position: relative;z-index: 4;
+}
+.photo{
+    width: 100%;height: 20vh;display: grid;place-items: center;
+}
+.photo img{
+    width: 35%;border-radius: 50%;border: 4px solid white;
+}
+h2{
+    margin: 20px 0;color: white;
+}
+p{
+    margin: 14px 0;color: white;
+}
+.icons{
+    width: 100%;
+}
+i{
+    cursor: pointer;
+}
+.icons i{
+    font-size: 1.4rem;color: white;margin: 10px 3px;padding: 5px 7px;border-radius: 50%;
+    cursor: pointer;transition: all 0.3s;
+}
+.icons i:hover{
+    background-color: white;color: crimson;
+}
+.foll{
+padding: 10px 48px;background-color: white;border-radius: 18px;font-size: 1.2rem;
+color: crimson;border: none;margin: 5vh 0 0 0 ;box-shadow: 3px 3px 6px crimson ;
+cursor: pointer;transition: all 0.4s;border: 2px solid white;
+}
+.foll:hover{
+    background-color: crimson;color: white;border: 2px solid white;
+}
+.more{
+    width: 100%;height: 20vh;border-radius: 15px ;position: absolute;
+    z-index: -4;bottom: 0;
+}
+.more p{
+    margin: 60px 0 0 0  ;color: rgb(37, 36, 36);
+}
+.more i{
+    color: crimson;font-size: 1.2rem;
+    margin: 13px 0 ;
+}

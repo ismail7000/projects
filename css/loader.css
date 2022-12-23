@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    font-family: sans-serif;
+    background-color: honeydew;
+}
+:root{
+    ---color: rgb(47, 142, 189);
+    --color2:honeydew;
+}
+
+header{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.video-con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -7;
+}
+h1{
+    font-size: 3.3rem;
+    color: var(--color2);
+    
+}
+header::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.748);
+    z-index: -4;
+}
+/* button css */
+.switch-btn{
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    padding: 7px 0;
+    border-radius: 5px;
+    border: none;
+   width: 114px;
+
+}
+.switch-btn span{
+    width: 50%;
+    border-radius: 5px;
+    height: 100%;
+    padding: 5px 6px;
+    margin: 0 3px;
+    color: var(---color);
+
+    font-weight: bold;
+}
+.switch-btn .switch{
+    width: 57px;
+    position: absolute;
+    padding: 14px 8px;
+    background-color: var(---color);
+    left: 0%;
+    border-radius: 5px;
+    top: 0px;
+    margin: 0%;
+    transition: left 0.6s;
+}
+.switch-btn .slice{
+    left: 50%;
+}
+
+/* preloader css */
+.preloader{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    left: 0;
+    top: 0%;
+    transition: all 0.5s;
+    background-color: honeydew;
+   visibility: visible;
+   
+    z-index: -999;
+    /* display: block; */
+}
+
+.preloader .loadergif{
+    width: 100px;
+}
+.preloader .hide-preloader{
+    z-index: 999;
+
+    visibility: hidden;
+/* display: none; */
+}
+
+
+
+
+
+

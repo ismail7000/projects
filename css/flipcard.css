@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.flipcard{
+    width: 400px ;
+    height: 70vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.6s;
+}
+.flipcard-front{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: darkgreen;
+}
+.flipcard-back{
+    transform: rotateY(180deg);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: darkorange;
+}
+.flipcard:hover .flipcard-front{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+

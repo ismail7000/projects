@@ -1,0 +1,218 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.questions{
+    width: 100vw;
+    padding: 1vh 7vw;
+}
+.questions .question,.answer{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.question h1{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 5px 0 ;
+    margin: 5px 0;
+}
+.question i{
+    color: rgba(0, 0, 0, 0.845);
+    transform: rotateX(0deg);
+    transition: transform 0.5s;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+/* .question i{
+    transform: rotateZ(180deg);
+} */
+
+.answer {
+    font-size: 1.2rem;
+    font-family: "poppins",sans-serif;
+    /* display: none; */
+    visibility: hidden;
+    height: 0vh;
+}
+.showanswer{
+    height: 20vh;
+    visibility: visible;
+
+}
+/* auto increment functionality */
+.autoincre {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    margin: 10vh 0;
+    place-items: center;
+    background-image: url('/img2/centerpic.jpg');
+    
+    background-size: cover;
+    position: -webkit-sticky;
+    background-position: center;
+}
+
+.incre {
+    width: 100vw;
+    /* background-color: var(--color4); */
+
+    background-color: rgba(0, 128, 0, 0.78);
+    display: grid;
+    padding: 10vh 14vw;
+    /* place-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+.incre div {
+    text-align: center;
+}
+
+.incre div i {
+    font-size: 4rem;
+    color: aliceblue;
+}
+
+.incre div p {
+    color: aliceblue;
+    font-size: 3.3rem;
+    padding: 7px 0;
+
+}
+
+.incre div h3 {
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: normal;
+
+
+}
+
+@media only screen and (max-width:835px) {
+    .autoincre {
+        height: fit-content;
+    }
+
+    .incre div i {
+        font-size: 2rem;
+    }
+
+    .incre div p {
+        font-size: 1.2rem;
+
+    }
+
+    .incre div h3 {
+        font-size: 1rem;
+    }
+
+    .ques1 {
+        width: 90vw;
+        /* margin: 0 20px ; */
+    }
+
+    .autoincre {
+        padding: 0 40px;
+
+    }
+}
+/* contact us */
+.contact{
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    padding: 30px 0;
+    box-shadow: 4px 4px 28px inset darkgray;
+    
+} 
+.contact p{
+    color: rgba(0, 0, 0, 0.857);
+    text-shadow: none;
+}
+.contact .infor{
+    width: 100vw;
+    display: grid;
+    padding: 5vh 10vw;
+    grid-template-columns: minmax(300px,1fr);
+    grid-template-columns: 2fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 0px 10px;
+}
+.contact .infor div{
+    /* background-color: darkcyan; */
+background-color: honeydew;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.contact .infor div i{
+    color: var(--color9);
+    font-size: 2.3rem;
+}
+.infor h2{
+    color: var(--color9);
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+.infor p{
+    color: var(--color9);
+    text-shadow: none;
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+.mapform{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vh 10vw;
+    grid-gap: 10px 10px;
+    
+}
+.mapform div{
+background-color: honeydew;
+}
+.mapform .map iframe{
+    height:50vh ;
+}
+.form {
+    padding: 10px 30px;
+}
+.form form{
+    padding: 15px 20px;
+    text-align: left;
+}
+.form form input,textarea{
+    padding: 10px 20px;
+    border: 1px solid darkgray;
+    font-size: 1.2rem;
+    margin: 5px 5px;
+    outline: none;
+    opacity: 0.7;
+
+}
+
+.form form div{
+    display: flex;
+    /* padding: 0px 0px; */
+}
+.form form button{
+    margin: 0 4px;
+    padding: 10px 20px;
+}
+.form form div input{
+    width: 95%;
+    margin: 10px 4px;
+
+}
+
+.form form input,textarea::placeholder{
+    opacity: 0.7;
+}

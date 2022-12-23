@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="css/progressbar.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>Our Employes</h2>
+    </div>
+<div class="box">
+    <div class="circle">Javascript Developers:</div>
+    <div class="line"></div>
+    <div class="circle circle2">PHP Developers:</div>
+    <div class="line line2"></div>
+    <div class="circle circle3">Python Developers:</div>
+    <div class="line line3"></div>
+
+</div>
+
+
+
+<script>
+let circle=document.querySelector('.circle')
+let circle3=document.querySelector('.circle2')
+let circle2=document.querySelector('.circle3')
+let counter=0
+setInterval(()=>{
+    if(counter==70){
+        clearInterval()
+    }
+    else{
+        counter+=1
+        circle.innerHTML="Javascript Developers:"+counter+"%"
+    }
+
+
+},41)
+let counter3=0
+setInterval(()=>{
+    if(counter3==30){
+        clearInterval()
+    }
+    else{
+        counter3+=1
+        circle2.innerHTML="PHP Developers:"+counter3+"%"
+    }
+
+
+},53)
+let counter2=0
+setInterval(()=>{
+    if(counter2==90){
+        clearInterval()
+    }
+    else{
+        counter2+=1
+        circle3.innerHTML="Python Developers:"+counter2+"%"
+    }
+
+
+},31)
+
+
+</script>
+</body>
+</html>
